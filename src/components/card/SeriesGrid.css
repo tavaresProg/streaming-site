@@ -1,0 +1,95 @@
+:root {
+    --heart: #DC143C;
+}
+
+.container {
+    color: var(--accent);
+}
+
+.container .title {
+    color: var(--background);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.title .query-text {
+    color: var(--accent);
+}
+
+.series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.series-container div {
+    margin: 0 auto;
+    width: 350px;
+    color: var(--text);
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.series-container div img {
+    max-width: 100%;
+}
+
+.series-container div img,
+.series-container div h2,
+.series-container div p {
+    margin-bottom: 1rem;
+}
+
+.series-container div svg {
+    color: var(--heart);
+}
+
+.series-container div a {
+    background: var(--accent);
+    border-radius: 4px;
+    color: var(--background);
+    padding: 1rem .5rem;
+    transition: .4s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.series-container div a:hover {
+    background: var(--background);
+    color: var(--accent);
+}
+
+.serie-card p {
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--text);
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+
+    .container .title {
+        font-size: 2rem;
+        padding: .4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .container .title {
+        font-size: 1.6rem;
+        padding: .5rem;
+    }
+}
